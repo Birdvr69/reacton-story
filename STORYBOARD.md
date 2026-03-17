@@ -1,4 +1,4 @@
-# ❄️ Interactive Story: Growing Up in a Changing World
+# Interactive Story: Growing Up in a Changing World
 ## Storyboard & Planning Document
 
 ---
