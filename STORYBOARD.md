@@ -1,4 +1,4 @@
-# ❄️ Interactive Story: Growing Up in a Changing World
+# Interactive Story: Growing Up in a Changing World
 ## Storyboard & Planning Document
 
 ---
@@ -291,7 +291,7 @@ THE END - A FUTURE OF SMALL COURAGE
 
 ---
 
-### **❌ BAD ENDING**
+### **BAD ENDING**
 **Reached by:** Choosing "Ignore the problem" + "Choose convenience"
 
 **Visual Setting:**
@@ -389,14 +389,14 @@ Each scene should contain:
 
 ## NEXT STEPS
 
-1. ✅ **Storyboard** (DONE - this document)
-2. 📊 **Flow Chart** (Download from Miro - save as PDF in /miro folder)
-3. 🎨 **Figma Design** (Create visual mockups - save as PDF in /figma folder)
-4. 💻 **HTML Structure** (Create index.html with scene divs)
-5. 🎨 **CSS Styling** (Create main.css with scene styles and animations)
-6. ⚙️ **JavaScript Logic** (Create script.js with scene switching logic)
-7. 🖼️ **Images** (Add scene illustrations to /img folder)
-8. 🚀 **GitHub** (Initialize repo and commit regularly)
+1. Storyboard (this document)
+2. Flow Chart (Download from Miro - save as PDF in /miro folder)
+3. Figma Design (Create visual mockups - save as PDF in /figma folder)
+4. HTML Structure (Create index.html with scene divs)
+5. CSS Styling (Create main.css with scene styles and animations)
+6. JavaScript Logic (Create script.js with scene switching logic)
+7. Images (Add scene illustrations to /img folder)
+8. GitHub (Initialize repo and commit regularly)
 
 ---
 

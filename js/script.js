@@ -38,7 +38,7 @@ function loadGameState() {
 // Story Scenes
 const scenes = {
     scene1: {
-        title: '🏔️ SCENE 1: "The Ice is Different Now"',
+        title: 'SCENE 1: "The Ice is Different Now"',
         narrative: [
             "Your name is Maya. You're 16 years old, growing up in Juneau, Alaska.",
             '',
@@ -54,7 +54,6 @@ const scenes = {
             '',
             'That night, your school is hosting a climate change discussion. Do you go?'
         ].join('\n'),
-        motif: '📍 Motif Reference: Melting glacier as lost stability',
         choices: [
             {
                 label: 'Option A: Attend the school discussion',
@@ -71,9 +70,9 @@ const scenes = {
         ]
     },
 
-    // Fortellende overgang (uten valg) → auto videre
+    // Transition scene
     scene2a_bridge: {
-        title: '❄️ Transition: "Cold Air, Warm Questions"',
+        title: 'Transition: "Cold Air, Warm Questions"',
         narrative: [
             'Outside the auditorium, the night air feels sharper than usual.',
             'You pull your jacket tighter and stare at the dark outline of the mountains.',
@@ -82,7 +81,6 @@ const scenes = {
             '',
             'You take one breath. Then another.'
         ].join('\n'),
-        motif: '📍 Motif Reference: Melting ice—quiet pressure before a choice',
         next: 'scene2a',
         autoAdvanceMs: 2600
     },
@@ -107,7 +105,6 @@ const scenes = {
             '',
             'Do you speak up and get involved, or stay quiet?'
         ].join('\n'),
-        motif: '📍 Motif Reference: Melting ice as a metaphor for things you can no longer ignore',
         choices: [
             {
                 label: 'Option A: Speak up and join the climate club',
@@ -124,9 +121,9 @@ const scenes = {
         ]
     },
 
-    // Fortellende overgang (uten valg) → auto videre
+    // Transition scene
     scene2b_bridge: {
-        title: '🌧️ Transition: "Rain in December"',
+        title: 'Transition: "Rain in December"',
         narrative: [
             'You stay home. The window shows streetlights smeared by rain.',
             '',
@@ -135,13 +132,12 @@ const scenes = {
             '',
             'Some thoughts are like thin ice: you can ignore them, but they still crack underneath.'
         ].join('\n'),
-        motif: '📍 Motif Reference: Melting ice—avoidance that still moves forward',
         next: 'scene2b',
         autoAdvanceMs: 2600
     },
 
     scene2b: {
-        title: '🏠 SCENE 2B: "Avoiding the Conversation"',
+        title: 'SCENE 2B: "Avoiding the Conversation"',
         narrative: [
             'You skip the discussion. That night at dinner, your mom mentions she read that',
             "Alaska's winters are 3 degrees warmer than they were 30 years ago.",
@@ -160,7 +156,6 @@ const scenes = {
             'Your mom comes home from work looking tired. Your dad is stressed about the fishing',
             'industry changing. Do you bring up climate change, or keep the peace?'
         ].join('\n'),
-        motif: '📍 Motif Reference: Melting ice surfaces in daily life—someone must acknowledge it',
         choices: [
             {
                 label: 'Option A: Start a family conversation',
@@ -178,7 +173,7 @@ const scenes = {
     },
 
     scene3a: {
-        title: '⚡ SCENE 3: "Your Path Forward" - The Activist Path',
+        title: 'SCENE 3: "Your Path Forward" - The Activist Path',
         narrative: [
             "Three months have passed. You've been meeting with the climate club twice a week.",
             "You've organized a fossil fuel divestment petition. You've talked to your family about",
@@ -194,7 +189,6 @@ const scenes = {
             'Will you keep pushing for bigger change, even when it feels impossible, or find balance',
             'between action and taking care of yourself?'
         ].join('\n'),
-        motif: "📍 Motif Reference: Melting ice—a constant reminder of what's at stake",
         choices: [
             {
                 label: 'Option A: Keep pushing for bigger change',
@@ -212,7 +206,7 @@ const scenes = {
     },
 
     scene3b: {
-        title: '⚡ SCENE 3: "Your Path Forward" - The Wake-Up Call',
+        title: 'SCENE 3: "Your Path Forward" - The Wake-Up Call',
         narrative: [
             "Six months have passed. You didn't join the climate club. But you did talk to your",
             'family about what you learned online.',
@@ -227,7 +221,6 @@ const scenes = {
             'Will you choose convenience and comfort despite knowing the costs, or take responsibility',
             'for being part of solutions?'
         ].join('\n'),
-        motif: '📍 Motif Reference: Melting ice as a call to action that you\'re learning to answer',
         choices: [
             {
                 label: 'Option A: Take responsibility and pursue action',
@@ -245,7 +238,7 @@ const scenes = {
     },
 
     ending_awakened: {
-        title: '✨ THE AWAKENED PATH',
+        title: 'THE AWAKENED PATH',
         ending: true,
         narrative: [
             "Ten years later, you're 26 years old. You studied environmental science in college.",
@@ -265,12 +258,11 @@ const scenes = {
             '',
             'YOU CHOSE TO BE PART OF THE SOLUTION.'
         ].join('\n'),
-        label: 'THE END - A FUTURE OF ENGAGEMENT',
-        motif: '📍 Motif Reference: Final image of melting ice, paired with human action and adaptation'
+        label: 'THE END - A FUTURE OF ENGAGEMENT'
     },
 
     ending_comfortable: {
-        title: '❌ THE COMFORTABLE PATH',
+        title: 'THE COMFORTABLE PATH',
         ending: true,
         narrative: [
             "Ten years later, you're 26 years old. You chose a different path.",
@@ -291,12 +283,11 @@ const scenes = {
             '',
             "But you know that's not entirely true."
         ].join('\n'),
-        label: 'THE END - A FUTURE OF CONSEQUENCE',
-        motif: '📍 Motif Reference: Melting ice—a reality you can no longer avoid, even through avoidance'
+        label: 'THE END - A FUTURE OF CONSEQUENCE'
     },
 
     ending_balanced: {
-        title: '🌱 THE BALANCED PATH',
+        title: 'THE BALANCED PATH',
         ending: true,
         narrative: [
             "Ten years later, you're 26 years old. You didn't become a climate activist. You didn't",
@@ -317,8 +308,7 @@ const scenes = {
             '',
             'The ice is melting. But so are the barriers to action.'
         ].join('\n'),
-        label: 'THE END - A FUTURE OF SMALL COURAGE',
-        motif: '📍 Motif Reference: Melting ice—a call to action that you\'re learning to answer'
+        label: 'THE END - A FUTURE OF SMALL COURAGE'
     }
 };
 
