@@ -90,7 +90,7 @@ var scenes = {
     }
 };
 
-// Scene renderer
+
 function renderScene(sceneKey) {
     var container = document.getElementById('story-container');
     var scene = scenes[sceneKey];
@@ -124,7 +124,7 @@ function renderScene(sceneKey) {
     window.scrollTo(0, 0);
 }
 
-// Choice handler
+
 function makeChoice(nextScene, choice) {
     storyData.currentScene = nextScene;
     storyData.path.push(choice);
@@ -139,7 +139,7 @@ function makeChoice(nextScene, choice) {
     renderScene(nextScene);
 }
 
-// Restart
+
 function restartStory() {
     storyData = {
         currentScene: 'scene1',
@@ -150,7 +150,7 @@ function restartStory() {
     renderScene('scene1');
 }
 
-// Start the story
+
 loadProgress();
 var startScene = scenes[storyData.currentScene] ? storyData.currentScene : 'scene1';
 renderScene(startScene);
